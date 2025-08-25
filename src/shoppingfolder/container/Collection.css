@@ -1,0 +1,11 @@
+.imageBox button{
+  background-color: brown;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}

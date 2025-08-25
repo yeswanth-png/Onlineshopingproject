@@ -1,0 +1,156 @@
+.cart-container {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.cart-toggle {
+  display: none;
+}
+
+/* Cart button */
+.cart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #111;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #f5f5f5;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.cart-toggle:checked ~ .cart-sidebar {
+  right: 0;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Cart items */
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.cart-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+  padding: 100px 20px 20px;
+}
+/* Ordered List Wrapper */
+.ordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each Ordered Item */
+.ordered-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.ordered-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Product Image */
+.cart-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Item Info */
+.ordered-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordered-item p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+/* Top bar with cart and home buttons */
+.cart-header-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.cart-button,
+.home-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover,
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the checkbox input */
+.cart-toggle {
+  display: none;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #218838;
+}

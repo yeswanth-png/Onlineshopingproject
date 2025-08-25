@@ -1,0 +1,81 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    border: none
+}
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(36, 161, 227);
+}
+.center ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0px 5px;
+}
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.left{
+    flex: 2;
+}
+.center{
+    flex:4;
+}
+.right{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10px;
+}
+.search{
+    flex: 2;
+}
+.bannerBox{
+    margin:10px 0px;
+
+}
+.bannerBox img{
+    width: 100%;
+}
+.menImages{
+    display: flex;
+    gap: 50px;
+}
+.menImages img{
+    width: 200px;
+    height: 220px;
+}
+.womenImages{
+    display: flex;
+   gap: 20px;
+}
+.womenImages img{
+    width: 200px;
+    height: 220px;
+}
+.womenSection img{
+width: 100%;
+}
+.signin a{
+    text-decoration: none;
+    color: rgb(13, 239, 243);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.signin a:hover{
+    color: rgb(255, 255, 255);
+    color: tomato;
+}
+.welcome{
+    color: rgb(220, 8, 29);
+    font-weight: bold;
+    text-transform: uppercase;
+}
