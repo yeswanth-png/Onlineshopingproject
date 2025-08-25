@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Onlineshopingproject/static/css/main.5d4921c4.css",
+    "main.js": "/Onlineshopingproject/static/js/main.25bf20dc.js",
+    "index.html": "/Onlineshopingproject/index.html",
+    "main.5d4921c4.css.map": "/Onlineshopingproject/static/css/main.5d4921c4.css.map",
+    "main.25bf20dc.js.map": "/Onlineshopingproject/static/js/main.25bf20dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4921c4.css",
+    "static/js/main.25bf20dc.js"
+  ]
+}
