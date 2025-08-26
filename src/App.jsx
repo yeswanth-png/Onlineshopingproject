@@ -9,7 +9,7 @@ import Cart from "./shoppingfolder/container/Cart";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/Onlineshopingproject">
     
       <Routes>
         <Route path="/" element={<MainPage />} />

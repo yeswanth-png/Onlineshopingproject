@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
+import { API_BASE_URL } from '../../config';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const Signup = () => {
     e.preventDefault();
      console.log(formData);
 
-    const response = await fetch('http://localhost:8081/api/user', {
+    const response = await fetch(`${API_BASE_URL}/api/user`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

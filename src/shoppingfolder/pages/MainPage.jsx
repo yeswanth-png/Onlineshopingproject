@@ -12,7 +12,7 @@ const MainPage = () => {
   return (
     <div>
   <Header/>
-      <Banner />
+      <Banner/>
           <Collection gents={gents}/>
           <Women ladies={ladies} />
           <Footer />

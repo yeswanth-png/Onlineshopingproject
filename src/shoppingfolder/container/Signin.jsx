@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Signin.css';
 import { useNavigate } from 'react-router-dom';
+import { API_BASE_URL } from '../../config';  
 
 const Signin = () => {
   const [email, setEmail] = useState('');
@@ -10,8 +11,8 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:8081/api/udetail?email=${encodeURIComponent(email)}`);
-    
+    const response = await fetch(`${API_BASE_URL}/api/udetail?email=${encodeURIComponent(email)}`);
+
 
     if (response.ok) {
       const data = await response.json();
